@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tournaments",
+  "info": {
+    "name": "Tournament"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "teams": {
+      "via": "tournament",
+      "collection": "team"
+    },
+    "tournament_date": {
+      "type": "datetime"
+    },
+    "cup": {
+      "via": "tournament",
+      "model": "cup"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "team",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "member": {
+      "via": "team",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "matches": {
+      "collection": "matches",
+      "via": "other_team"
+    },
+    "tournament": {
+      "model": "tournament",
+      "via": "teams"
+    },
+    "captain": {
+      "via": "team_captain",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "cup": {
+      "via": "team",
+      "model": "cup"
+    }
+  }
+}

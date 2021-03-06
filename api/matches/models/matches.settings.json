@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matches",
+  "info": {
+    "name": "matches"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "First_team": {
+      "model": "team",
+      "via": "matches"
+    },
+    "other_team": {
+      "via": "matches",
+      "model": "team"
+    },
+    "match_time": {
+      "type": "datetime"
+    }
+  }
+}

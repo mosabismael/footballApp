@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cups",
+  "info": {
+    "name": "cup"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "team": {
+      "model": "team",
+      "via": "cup"
+    },
+    "tournament": {
+      "model": "tournament",
+      "via": "cup"
+    }
+  }
+}
