@@ -15,26 +15,37 @@
       "type": "string"
     },
     "member": {
-      "via": "team",
       "plugin": "users-permissions",
-      "collection": "user"
+      "collection": "user",
+      "via": "team"
     },
     "matches": {
       "collection": "matches",
       "via": "other_team"
     },
     "tournament": {
-      "model": "tournament",
-      "via": "teams"
+      "via": "teams",
+      "model": "tournament"
     },
     "captain": {
-      "via": "team_captain",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "team_captain"
     },
     "cup": {
-      "via": "team",
-      "model": "cup"
+      "model": "cup",
+      "via": "team"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

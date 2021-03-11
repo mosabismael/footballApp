@@ -60,12 +60,12 @@
       "configurable": false
     },
     "team": {
-      "model": "team",
-      "via": "member"
+      "via": "member",
+      "model": "team"
     },
     "team_captain": {
-      "model": "team",
-      "via": "captain"
+      "via": "captain",
+      "model": "team"
     },
     "phone": {
       "type": "biginteger"

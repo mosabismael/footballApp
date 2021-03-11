@@ -13,6 +13,13 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "day": {
+      "type": "date"
+    },
+    "matches": {
+      "collection": "matches",
+      "via": "court"
     }
   }
 }

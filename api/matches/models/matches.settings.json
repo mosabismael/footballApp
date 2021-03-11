@@ -18,8 +18,16 @@
       "via": "matches",
       "model": "team"
     },
+    "is_tournament": {
+      "type": "boolean",
+      "default": false
+    },
     "match_time": {
       "type": "datetime"
+    },
+    "court": {
+      "via": "matches",
+      "model": "court"
     }
   }
 }

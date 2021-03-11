@@ -11,12 +11,12 @@
   },
   "attributes": {
     "team": {
-      "model": "team",
-      "via": "cup"
+      "via": "cup",
+      "model": "team"
     },
     "tournament": {
-      "model": "tournament",
-      "via": "cup"
+      "via": "cup",
+      "model": "tournament"
     }
   }
 }
