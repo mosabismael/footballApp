@@ -9,7 +9,7 @@
     "team": {
       "model": "team"
     },
-    "other_team": {
+    "second_team": {
       "model": "team"
     }
   }

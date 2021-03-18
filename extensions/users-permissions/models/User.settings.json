@@ -86,6 +86,14 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "comment": {
+      "via": "users_permissions_users",
+      "model": "comment"
+    },
+    "posts": {
+      "via": "users_permissions_user",
+      "collection": "post"
     }
   }
 }

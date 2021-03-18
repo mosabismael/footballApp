@@ -21,7 +21,7 @@
     },
     "matches": {
       "collection": "matches",
-      "via": "other_team"
+      "via": "second_team"
     },
     "tournament": {
       "via": "teams",

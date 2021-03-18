@@ -1,0 +1,110 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/posts/:user_id",
+      "handler": "Post.find",
+      "config": {
+        "policies": []
+      }
+    },
+     {
+      "method": "GET",
+      "path": "/myposts/:user_id",
+      "handler": "Post.findMyPost",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postsTen/:user_id",
+      "handler": "Post.findMaxTen",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "GET",
+      "path": "/postsByClass/:user_id/:ClassId",
+      "handler": "Post.findByClass",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postsByLocatin/:user_id/:locationId",
+      "handler": "Post.findByLocation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postsByCurrentLocatin/:user_id/",
+      "handler": "Post.findByCurrentLocation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postsByClassAndLocation/:user_id/:ClassId/:locationId",
+      "handler": "Post.findByLocationClass",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "GET",
+      "path": "/posts/save/:user_id",
+      "handler": "Post.findPostSave",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/posts/count",
+      "handler": "Post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/post/:_id",
+      "handler": "Post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/posts",
+      "handler": "Post.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/posts/:_id",
+      "handler": "Post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/posts/:_id",
+      "handler": "Post.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

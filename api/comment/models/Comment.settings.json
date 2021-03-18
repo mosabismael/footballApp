@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "comment",
+  "info": {
+    "name": "comment",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "post": {
+      "via": "comments",
+      "model": "post"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "comment"
+    }
+  }
+}

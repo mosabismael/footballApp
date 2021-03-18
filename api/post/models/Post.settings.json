@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "post",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "post"
+    },
+    "likes": {
+      "collection": "like",
+      "via": "post"
+    },
+    "type": {
+      "type": "integer"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "posts"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "like",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "post": {
+      "via": "likes",
+      "model": "post"
+    }
+  }
+}

@@ -14,13 +14,19 @@
       "model": "team",
       "via": "matches"
     },
-    "other_team": {
+    "second_team": {
       "via": "matches",
       "model": "team"
     },
     "is_tournament": {
       "type": "boolean",
       "default": false
+    },
+    "goals_frist_team": {
+      "type": "integer"
+    },
+    "goals_second_team": {
+      "type": "integer"
     },
     "match_time": {
       "type": "datetime"
