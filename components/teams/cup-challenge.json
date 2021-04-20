@@ -2,11 +2,12 @@
   "collectionName": "components_tems_cup_challenges",
   "info": {
     "name": "cup_challenge",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "team": {
+    "frist_team": {
       "model": "team"
     },
     "second_team": {
