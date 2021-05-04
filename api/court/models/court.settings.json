@@ -20,6 +20,19 @@
     "matches": {
       "collection": "matches",
       "via": "court"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "players": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "string"
+    },
+    "bookings": {
+      "via": "court",
+      "collection": "booking"
     }
   }
 }

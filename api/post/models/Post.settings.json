@@ -28,19 +28,13 @@
       "collection": "like",
       "via": "post"
     },
-    "type": {
-      "type": "integer"
-    },
-    "lng": {
-      "type": "float"
-    },
-    "lat": {
-      "type": "float"
-    },
     "users_permissions_user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "posts"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }

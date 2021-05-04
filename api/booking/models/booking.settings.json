@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "name": "booking"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_team": {
+      "model": "team",
+      "via": "bookings"
+    },
+    "the_second_team": {
+      "model": "team",
+      "via": "bookings"
+    },
+    "court": {
+      "model": "court",
+      "via": "bookings"
+    }
+  }
+}

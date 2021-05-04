@@ -25,7 +25,7 @@
     "description": {
       "type": "richtext"
     },
-    "name": {
+    "tournament_name": {
       "type": "string"
     },
     "team_number": {
@@ -36,6 +36,12 @@
       "components": [
         "teams.cup-challenge"
       ]
+    },
+    "matches_number": {
+      "type": "integer"
+    },
+    "prize_money": {
+      "type": "decimal"
     }
   }
 }

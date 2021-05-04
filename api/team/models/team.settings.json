@@ -46,6 +46,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "bookings": {
+      "via": "the_second_team",
+      "collection": "booking"
     }
   }
 }

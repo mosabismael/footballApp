@@ -18,6 +18,16 @@
       "via": "matches",
       "model": "team"
     },
+    "status": {
+      "enum": [
+        "not_started",
+        "play_now",
+        "finished",
+        "cancelled"
+      ],
+      "type": "enumeration",
+      "default": "sended"
+    },
     "is_tournament": {
       "type": "boolean",
       "default": false
